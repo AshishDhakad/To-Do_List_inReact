@@ -1,0 +1,133 @@
+/* Styling for the main container */
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Styling for the input and button */
+  .inpTask {
+    width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Styling for the buttons */
+ .edit{
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+  }
+  .delete{
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ca3724;
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+  }
+
+  .update{
+    cursor: pointer;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e8eb6b;
+    color: white;
+    font-size: 14px;
+    margin: 5px;
+  }
+  
+  .edit:hover {
+    background-color: #218838;
+  }
+  .delete:hover {
+    background-color: #ed0000;
+  }
+  
+ 
+  
+  
+  /* Styling for the task list container */
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the task list */
+    margin: 0; /* Reset margin */
+  }
+  
+  /* Styling for each task item */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and buttons */
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px 15px; /* Add some padding */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for each task text */
+  li {
+    font-size: 16px;
+    flex: 1; /* Take up remaining space */
+  }
+  
+  /* Styling for the popup */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-inner {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 300px;
+  }
+  
+  .popup input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .popup button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .popup button:hover {
+    background-color: #0056b3;
+  }
+  
